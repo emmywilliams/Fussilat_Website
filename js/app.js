@@ -8,34 +8,39 @@ $(document).ready(function () {
     items: 1,
     smartSpeed: 1000,
     autoplay: true,
+    autoplayTimeout: 5000,
+    responsive: {
+      0: {
+        nav: false,
+      },
+      768: {
+        nav: true,
+      },
+    },
+  });
+
+  // Project slider
+  $("#project-slider").owlCarousel({
+    loop: true,
+    margin: 24,
+    nav: true,
+    dots: true,
+    smartSpeed: 1000,
     autoplay: true,
     autoplayTimeout: 5000,
     responsive: {
-      0: {},
-      600: {},
-      1000: {},
+      0: {
+        items: 1,
+        nav: false,
+        margin: 0,
+      },
+      768: {
+        items: 2,
+      },
+      1140: {
+        items: 2,
+        center: true,
+      },
     },
   });
 });
-
-// $(document).ready(function()  const $animation_elements = $('.number');
-//   let $window = $(window);
-
-//   function check_if_in_view()    let window_height = $window.height();
-//     let window_top_position = $window.scrollTop();
-//     let window_bottom_position = (window_top_position + window_height);
-
-//     $.each($animation_elements, function()      let $element = $(this);
-//       let element_height = $element.outerHeight();
-//       let element_top_position = $element.offset().top;
-//       let element_bottom_position = (element_top_position + element_height);
-
-//       if ((element_bottom_position >= window_top_position) &&
-//           (element_top_position <= window_bottom_position))        $element.prop('Counter',0).animate          Counter: $element.text()
-//                  duration: 4000,
-//           easing: 'swing',
-//           step: function (now)            $element.text(Math.ceil(now));
-//                       else        $element.text("");
-
-//   $window.on('scroll resize', check_if_in_view);
-//   $window.trigger('scroll');

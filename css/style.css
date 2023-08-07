@@ -171,6 +171,11 @@ section {
     color: #ff4d29 !important;
 }
 
+.owl-dot {
+    margin: 0 4px;
+    color: #ff4d29 !important;
+}
+
 /* info-box */
 .info-box {
     display: flex;
@@ -222,4 +227,116 @@ p.mb-0 {
 .service-box h5 {
     margin-top: 24px;
     margin-bottom: 12px;
+}
+
+/* Project */
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+.project .overlay {
+    background: linear-gradient(to bottom, rgba(9, 32, 50, 0.0), rgba(9, 32, 50, 0.8));
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    bottom: 0;
+    left: 0;
+}
+
+.project .content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 32px;
+}
+
+.project h1,
+.project h6 {
+    color: #ffffff;
+}
+
+.project h6 {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.project h6::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background-color: #ff4d29;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+/* Team */
+.team-member {
+    text-align: center;
+    position: relative;
+}
+
+.team-member .img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member .img-wrapper img {
+    width: 100%;  /* Adjust as necessary */
+    height: 400px; /* Adjust as necessary */
+    object-fit: cover; /* Ensures the aspect ratio of the image is maintained */
+  }
+
+.team-member .overlay {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 77, 41, 0.5);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member .social-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.team-member .social-links a {
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+}
+
+.team-member:hover .overlay {
+    top: 0;
+    opacity: 1;
+}
+
+.team-member:hover .social-links {
+    opacity: 1;
+    top: 50%;
+}
+
+.team-member h4 {
+    margin-top: 24px;
 }
