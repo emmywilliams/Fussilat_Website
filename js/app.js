@@ -43,4 +43,16 @@ $(document).ready(function () {
       },
     },
   });
+
+  // Hero slider
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: true,
+    items: 1,
+    smartSpeed: 1000,
+    autoplay: true,
+    autoplayTimeout: 5000,
+  });
 });
