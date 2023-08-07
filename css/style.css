@@ -33,12 +33,22 @@ section {
 }
 
 .intro {
-    margin-bottom: ;
+    margin-bottom: 40px;
+}
+
+.intro h6 {
+    font-weight: 400;
+    color: #ff4d29;
+}
+
+.intro p {
+    max-width: 500px;    
+    margin:auto auto;
 }
 
 /* Navbar */
 .top-nav {
-    background-color: #ff4d20;
+    background-color: #ff4d29;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -69,7 +79,7 @@ section {
 
 .social-links a:hover {
     background-color: #ffffff;
-    color: #ff4d20;
+    color: #ff4d29;
 }
 
 .navbar {
@@ -78,7 +88,7 @@ section {
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: #ff4d20;
+    color: #ff4d29;
 }
 
 .navbar-brand {
@@ -88,7 +98,7 @@ section {
 }
 
 .navbar-brand span {
-    color: #ff4d20;
+    color: #ff4d29;
 }
 
 .nav-link {
@@ -103,9 +113,9 @@ section {
 }
 
 .btn-brand {
-    background-color: #ff4d20;
+    background-color: #ff4d29;
     color: #ffffff;
-    border-color: #ff4d20;
+    border-color: #ff4d29;
 }
 
 .btn-brand:hover {
@@ -158,7 +168,7 @@ section {
 .owl-prev:hover,
 .owl-next:hover {
     background-color: #ffffff !important;
-    color: #ff4d20 !important;
+    color: #ff4d29 !important;
 }
 
 /* info-box */
@@ -192,4 +202,24 @@ section {
 p.mb-0 {
     font-weight: 500;
     font-size: medium !important;
+}
+
+.service-box {
+    box-shadow: 8px 6px 30px rgba(0, 0, 0, 0.08);
+    text-align: center !important;
+}
+
+.service-content {
+    padding: 0 32px 32px;
+}
+
+.service-box img {
+    max-width: 100%; /* Set the maximum width to 100% to ensure the image fits the container */
+    height: 200px; /* Set a fixed height for uniformity (adjust as needed) */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+}
+
+.service-box h5 {
+    margin-top: 24px;
+    margin-bottom: 12px;
 }
