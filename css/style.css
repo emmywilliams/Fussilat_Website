@@ -22,6 +22,20 @@ img {
     width: 100%;
 }
 
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.bg-cover {
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.intro {
+    margin-bottom: ;
+}
+
 /* Navbar */
 .top-nav {
     background-color: #ff4d20;
@@ -79,6 +93,7 @@ img {
 
 .nav-link {
     font-weight: 500;
+    color: #092032;
   }
 
 /* contact us button */
@@ -96,4 +111,85 @@ img {
 .btn-brand:hover {
     color: #ffffff;
     background-color: #e04122;
+}
+
+/* slider */
+.slide1 {
+    background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.5)), url('../images/20.avif');
+}
+
+.slide2 {
+    background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url('../images/17.jpg');
+}
+
+.slide3 {
+    background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url('../images/21.jpg');
+}
+
+.slide4 {
+    background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url('../images/19.jpg');
+}
+
+/* owl carousel */
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    margin-top: -30px !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 32px !important;
+    border-radius: 100% !important;
+}
+
+.owl-prev {
+    left: 0;
+}
+
+.owl-next {
+    right: 0;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: #ffffff !important;
+    color: #ff4d20 !important;
+}
+
+/* info-box */
+.info-box {
+    display: flex;
+    align-items: center;
+}
+
+.info-box img {
+    width: 90px;
+    margin-right: 24px;
+}
+
+/* milestone */
+#milestone {
+    background: linear-gradient(rgba(9, 32, 50, 0.6), rgba(9, 32, 50, 0.8)), url('../images/cl3.jpg');  
+    background-position: top !important; /* Display only the upper part of the image */
+    background-size: cover !important; /* Adjust the image size to cover the container */
+}
+
+#milestone .display-4,
+#milestone p {
+    color: #ffffff;
+}
+
+#milestone .display-4 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+p.mb-0 {
+    font-weight: 500;
+    font-size: medium !important;
 }
