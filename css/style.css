@@ -4,18 +4,23 @@ body {
     font-family: 'Barlow', sans-serif;    
     line-height: 1.7;
     color: #516171;
+    font-size: large;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700 !important;
+    font-weight: 700;
     color: #092032;
-}
+} 
 
 a {
     color: #092032;
     text-decoration: none;
     transition: all 0.4s ease;
     font-weight: 500;
+}
+
+a:hover {
+    color: #ff4d29;
 }
 
 img {
@@ -124,6 +129,12 @@ section {
 }
 
 /* slider */
+#hero-slider h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
 .slide1 {
     background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.5)), url('../images/20.avif');
 }
@@ -388,6 +399,7 @@ p.mb-0 {
 .blog-post {
     position: relative;
     overflow: hidden;
+    box-shadow: 8px 6px 30px rgba(0, 0, 0, 0.09);
 }
 
 .blog-post .tag {
@@ -402,11 +414,28 @@ p.mb-0 {
     text-transform: uppercase;
 }
 
+.blog-post .tag::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 0;
+    height: 0;
+    border-top: 32px solid transparent;
+    border-bottom: 32px solid transparent;
+    border-left: 8px solid #ff4d29;
+}
+
+.blog-post h4 a {
+    font-weight: 650;
+    font-size: 22px;
+  }
+
 .blog-post img {
     margin-bottom: 12px;
-    /* width: 100%;
-    height: 400px;
-    display: block; */
+    width: 100%;
+    height: 250px;
+    display: block;
 }
 
 .blog-post h4 {
