@@ -450,8 +450,45 @@ p.mb-0 {
 
 /* Footer */
 footer {
-    /* padding-top: 80px; */
-    background-color: #091e32;
+    padding-top: 70px;
+    padding-bottom: 20px;
     color: #ffffff;
-    padding: 32px 0;
+    background-color: #091e32;
+}
+
+footer .navbar-brand {
+    color: #ffffff;
+    display: inline;
+}
+
+.footer-links {
+    color: #ffffff;
+}
+
+.footer-top {
+    margin-bottom: 40px;
+}
+
+.col-lg-6 h4 {
+    color: #ffffff;
+}
+
+footer .social-links a {
+    margin: 0 4px;
+    width: 38px;
+    height: 38px;
+}
+
+.footer-contact h4 {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 20px;
+}
+
+.footer-links h4,
+.footer-links ul li a {
+    color: #ffffff;
 }
