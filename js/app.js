@@ -56,3 +56,13 @@ $(document).ready(function () {
     autoplayTimeout: 5000,
   });
 });
+
+function closeNavbar() {
+  if (window.innerWidth <= 992) {
+    // Adjust this breakpoint as needed
+    let navbar = document.querySelector(".navbar-collapse");
+    if (navbar.classList.contains("show")) {
+      navbar.classList.remove("show");
+    }
+  }
+}

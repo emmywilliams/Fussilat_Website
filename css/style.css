@@ -465,6 +465,15 @@ footer .navbar-brand {
     color: #ffffff;
 }
 
+.footer-links ul li a {
+    color: white;
+    transition: color 0.3s ease; /* Adding a smooth transition effect */
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ff4d29;
+  }
+
 .footer-top {
     margin-bottom: 40px;
 }
@@ -491,4 +500,27 @@ footer .social-links a {
 .footer-links h4,
 .footer-links ul li a {
     color: #ffffff;
+}
+
+/* Contact form */
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ff4d29;
+}
+
+.form-label{
+    font-weight: 300;
+    color: #092032;
+}
+
+.image-section {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+.custom-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem; 
+    padding-right: 3rem; 
 }
